@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ('./templates/head', {title: 'Error'}) %>
+</head>
+
+<body class="container text-center mt-5 pt-5">
+    <h1><%= message %></h1>
+    <h2><%= error.status %></h2>
+    <!-- <pre><%= error.stack %></pre> -->
+    <h3><a href="/">Voltar para a pagina principal </a></h3>
+    <footer class="pt-4">
+        <%- include ('./templates/footer') %>
+    </footer>
+
+</body>
+</html>

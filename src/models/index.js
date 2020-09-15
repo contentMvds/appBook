@@ -1,0 +1,1 @@
+export { booksModel } from './books';

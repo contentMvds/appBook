@@ -1,0 +1,63 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<%- include ('./templates/head', {title: 'Home'}) %>
+</head>
+
+<body>
+
+	<header>
+		<%- include ('./templates/header') %>
+	</header>
+
+	<main class="container">
+		<div class="jumbotron rounded-0 p-4">
+			<h1 class="display-4">Gerenciado de livros !!!</h1>
+			<p class="lead">Gerenciado de livros que estão sendo lidos ou que estão em espera para serem lidos</p>
+			<hr class="my-4">
+			<p class="lead">Total de livros lidos até a data de <%= data %>:
+				<span class="ml-5 p-2 badge badge-dark"><%= totalLivros %></span>
+			</p>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<table class="table">
+					<thead class="thead-dark">
+						<tr>
+							<th>id</th>
+							<th>Titulo</th>
+							<th>Autor</th>
+							<th>Categoria</th>
+							<th>Ano do livro</th>
+							<th>Status</th>
+							<th>Açoes</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> # </td>
+							<td> - </td>
+							<td> - </td>
+							<td> - </td>
+							<td> - </td>
+							<td> - </td>
+							<td> <button class="btn" type="button">Alterar</button> <button class="btn" type="button">Apagar</button>
+							</td>
+
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<%- include ('./templates/footer') %>
+	</footer>
+
+</body>
+
+</html>
